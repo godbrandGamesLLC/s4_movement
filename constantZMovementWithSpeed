@@ -1,0 +1,27 @@
+//Absolute beginning of script_ConstantZMovement_With_Speed script=========================
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class script_ConstantZMovement_With_Speed : MonoBehaviour
+{//Beginning of public class script_ConstantZMovement_With_Speed
+
+    public int speed;
+    private int direction = -1;
+    private Vector3 movement;
+
+
+    // Update is called once per frame
+    void Update()
+    {//Beginning of Update
+        
+        movement = Vector3.forward * direction * speed * Time.deltaTime;
+        transform.Translate(movement);
+
+    }//End of Update function 
+
+
+}//End of public class script_ConstantZMovement_With_Speed
+
+//Absolute end of script_ConstantZMovement_With_Speed script=========================
