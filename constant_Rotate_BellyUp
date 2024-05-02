@@ -1,0 +1,31 @@
+//+++++++++++++++Absolute beginning of the script_Rotate_BellyUp_Forever script++++++++++++++++++++++++++++
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class script_Rotate_BellyUp_Forever : MonoBehaviour
+{//Beginning of public class script_Rotate_BellyUp_Forever===================
+
+  //Beginning of variable declaration(s)
+   public float speed_Of_Rotation = 100f;
+   //End of variable declaration(s)
+   
+       void Update()
+        {//Beginning of void Update function
+
+           rotate_BellyUp();
+
+        }//End of void Update function
+
+    public void rotate_BellyUp()
+    {//Beginning of rotate_BellyUp function 
+
+        transform.Rotate((speed_Of_Rotation * Time.deltaTime),0f,0f );
+
+    }//End of rotate_BellyUp_function
+
+}//=============End of public class script_Rotate_BellyUp_Forever===================
+
+
+//+++++++++++++++Absolute end of the script_Rotate_BellyUp_Forever script++++++++++++++++++++++++++++
