@@ -1,0 +1,33 @@
+//absolute beginning of script_gold_rotation script
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class script_gold_rotation : MonoBehaviour
+{//b of public class script_gold_rotation : MonoBehaviour
+
+
+    //Beginning of variable declaration(s)
+    public float speed_Of_Rotation = 100f;
+    //End of variable declaration(s)
+
+    void Update()
+    {//Beginning of void Update function
+
+        rotate();
+
+    }//End of void Update function
+
+    public void rotate()
+    {//Beginning of rotate_BellyUp function 
+                    
+        //1st 0f is belly up , 2nd 0f is not it , 3rd is our classic gold rotation
+        transform.Rotate(0f, 0f , (speed_Of_Rotation * Time.deltaTime));
+
+    }//End of rotate_BellyUp_function
+
+
+}//e of public class script_gold_rotation : MonoBehaviour
+
+//absolute end of script_gold_rotation script
